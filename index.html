@@ -3,12 +3,26 @@
   <head>
     <title>Yann Herklotz</title>
     <link rel="stylesheet" href="stylesheets/main_stylesheet.css">
+    <script type="text/javascript">
+      setInterval(function() {
+      if(document.getElementById("cursor").style.visibility == "hidden") {
+      document.getElementById("cursor").style.visibility = "visible";
+      }
+      else {
+      document.getElementById("cursor").style.visibility = "hidden";
+      }
+      }, 500);
+    </script>
   </head>
 
   <body>
     <h1>Yann Herklotz</h1>
-    
-    <p>My name is Yann Herklotz, I am currently a student at imperial college.</p>
-    <p>I have developed many applications.</p>
+
+    <div class="terminal">
+      <div class="topbar">Terminal</div>
+      
+      <p>$ My name is Yann Herklotz, I am currently a student at imperial college.</p>
+      <p>$ I have developed many applications.<span id="cursor">&#9608</span></p>
+    </div>
   </body>
 </html>
