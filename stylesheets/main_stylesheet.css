@@ -11,6 +11,36 @@ h1 {
     margin: 5px 10px 30px 10px;
 }
 
+.titlebar {
+    background-color: #444;
+    font-family: "Noto Sans";
+    margin: 0px 0px 30px 0px;
+}
+
+.titlebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.titlebar li {
+    float: left;
+}
+
+.titlebar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.titlebar li a:hover {
+    background-color: #111;
+}
+
 .terminal {
     background-color: rgba(50, 50, 50, 0.7);
     width: 50%;
