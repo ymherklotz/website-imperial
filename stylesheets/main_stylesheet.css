@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans');
 
 body {
-    background-color: #555;
+    background-color: url("resources/leather_texture.jpg");
     color: #e2e2e2;
 }
 
