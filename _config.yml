@@ -22,7 +22,7 @@ google-tracking-id: ""
 # If you are not hosted on Github Pages, and your host doesn't support https
 # then you should disable it
 
-force-https: false
+force-https: true
 
 #############
 # HTML Head #
@@ -33,13 +33,13 @@ author: "Yann Herklotz"
 title: "Yann Herklotz"
 description: "Blog and Website of Yann Herklotz. This will mostly be about tech."
 keywords: "yann, herklotz, tech, programming, electronic, information, engineering"
-favicon: "/img/favicon.ico"
+favicon: "/img/YH_Icons/YH_64.ico"
 
 ################
 # Header layout #
 ################
 
-black-favicon: "/img/black-lab-glass.ico"
+black-favicon: "/img/YH_Icons/YH_64.ico"
 
 background-img: "../img/code-wallpaper-2.jpg"
 
