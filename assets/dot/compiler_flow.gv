@@ -1,0 +1,21 @@
+digraph G {
+    rankdir=LR;
+    src_code -> lexer;
+    assembler -> object_files -> linker -> binary;
+    
+    src_code [label="Source Code"];
+    object_files [label="Object Files"];
+    linker [label="Linker"];
+    binary [label="Binary"];
+
+    subgraph cluster_compiler {
+        label="Compiler";
+        rankdir=TB;
+        lexer -> parser -> code_generator -> assembler;
+
+        lexer [label="Lexer"];
+        parser [label="Parser"];
+        code_generator [label="Code Generator"];
+        assembler [label="Assembler"];
+    }
+}

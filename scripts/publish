@@ -1,0 +1,86 @@
+#!/usr/bin/env python
+
+import datetime
+import os
+import re
+import sys
+
+
+class Publish(object):
+
+    """
+    Publishes a portfolio or blog post from the input
+    directory to the output directory, by adhering to the
+    jekyll blog post scheme.
+    """
+
+    def __init__(self, draft, input_dir, output_dir, **kwargs):
+        now = datetime.datetime.today()
+        self.draft = draft
+        self.input_dir = input_dir
+        self.output_dir = output_dir
+        self.date = now.day, now.month, now.year, now.hour, \
+            now.minute, now.second
+        self.extension = ".md"
+        # set all attributes in kwargs
+        for key in kwargs.keys():
+            setattr(self, key, kwargs[key])
+
+        self.pub_name = self._get_pub_name()
+        self._publish()
+
+    def _get_pub_name(self):
+        return "{0}-{1}-{2}-{3}{4}".format(self.date[2],
+                                            self.date[1],
+                                            self.date[0],
+                                            self.draft,
+                                            self.extension)
+
+    def _publish(self):
+        filePath = os.path.join(self.input_dir, self.draft + self.extension)
+        index = 1
+        src = ""
+        with open(filePath, 'r') as file_:
+            file_.readline()  # ignore the first ---
+            while re.match(r"^---", file_.readline()) is None:
+                index += 1
+            file_.seek(0)
+            src = file_.readlines()
+            src.insert(index, "date: {0}-{1}-{2} {3}:{4}:{5} +0100\n".format(
+                self.date[2],
+                self.date[1],
+                self.date[0],
+                self.date[3],
+                self.date[4],
+                self.date[5]))
+        with open(os.path.join(self.output_dir, self.pub_name), 'w') as file_:
+            for line in src:
+                file_.write(line)
+
+
+def print_help():
+    help_doc = """
+publish help:
+
+  The user has to input a draft file that should be published
+    publish <draft_name>
+"""
+    print(help_doc)
+
+
+def main(argv):
+    if len(argv) < 2:
+        print_help()
+        return
+
+    input_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                             "../_drafts")
+    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                              "../_posts")
+    draft = argv[1]
+
+    Publish(draft, input_dir, output_dir)
+
+
+if __name__ == "__main__":
+    main(sys.argv)
