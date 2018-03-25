@@ -2,8 +2,9 @@
 layout: post
 title: "C to MIPS32 Compiler"
 categories: portfolio imperial
-image: /assets/dot/compiler_flow.svg
+image: /assets/img/language_machine.jpg
 ---
+
 ### What is a compiler?
 A Compiler is a program that transforms code written in one language into
 another language. This is normally done to transform a higher level language

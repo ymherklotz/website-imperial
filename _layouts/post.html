@@ -15,6 +15,10 @@ layout: default
       {% endif %}</p>
   </header>
 
+  <div class="post-image">
+    <img src="{{ page.image | escape }}" alt="Post Image">
+  </div>
+
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
