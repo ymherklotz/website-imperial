@@ -3,6 +3,8 @@ layout: post
 title: "Mips Processor"
 categories: portfolio imperial
 image: /assets/img/mips_processor/cpu.jpg
+date: 2016-10-03
+permalink: /portfolio/mips_processor/
 ---
 
 The best way to understand how a processor works in detail is to create one or,

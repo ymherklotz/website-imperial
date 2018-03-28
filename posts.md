@@ -1,6 +1,7 @@
 ---
-layout: default
-title: "Posts"
+layout: posts
+title: Posts
+permalink: /posts/
 ---
 
-Posts
+# Posts
