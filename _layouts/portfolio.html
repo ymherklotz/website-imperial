@@ -7,7 +7,8 @@ layout: default
   {{ content }}
 
   <ul class="post-list">
-    {% for post in site.portfolio %}
+    {% assign portfolio_reverse = site.portfolio | reverse %}
+    {% for post in portfolio_reverse %}
 
     <li>
       <div class="post-clickable" onclick="location.href='{{ post.url | relative_url }}';">
