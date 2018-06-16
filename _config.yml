@@ -1,53 +1,23 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: Yann Herklotz
+description: Personal website for blogs and projects.
+baseurl: "/"
+url: "www.yannherklotz.com"
+
+# User settings
+username: Yann Herklotz
+user_description: Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole mustache man bun letterpress echo park VHS.
+user_title: Software Developer
 email: ymherklotz@gmail.com
-description: >
-  Portfolio of interesting projects that I have been working on since
-  starting university.
-baseurl: "" 
-url: "https://www.yannherklotz.com" 
+twitter_username: ymherklotz
 github_username: ymherklotz
+linkedin_username: yannherklotz
 
-# Build settings
-markdown: kramdown
-plugins:
-  - jekyll-feed
+# Google-analytics
+google-analytics:
+  id: ""
 
-collections:
-  portfolio:
-    output: true
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: post
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
 exclude:
-  - Gemfile
-  - Gemfile.lock
+  - package.json
+  - src
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - scripts/
