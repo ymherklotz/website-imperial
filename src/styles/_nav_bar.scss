@@ -1,0 +1,122 @@
+.site-header {
+    left: 20%;
+    width: 60%;
+    position: absolute;
+    padding-top: 50px;
+}
+
+.site-title {
+    float: left;
+}
+
+#ymh_logo {
+    position: absolute;
+    height: 96px;
+    width: 96px;
+    margin: 0 auto;
+}
+
+#ymh_logo img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    width: 96px;
+    height: auto;
+    cursor: pointer;
+}
+
+#ymh_logo img.bottom:hover {
+    opacity: 0;
+}
+
+.site-nav {
+    float: right;
+    position: relative;
+    line-height: $base-line-height * $base-font-size * 2.25;
+
+    .nav-trigger {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        line-height: $base-line-height;
+        @include relative-font-size(1.25);
+        font-weight: bold;
+        text-align: center;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: $spacing-unit / 2;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+
+        label[for="nav-trigger"] {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 36px;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg path {
+                fill: $grey-color-dark;
+            }
+        }
+
+        input ~ .trigger {
+            clear: both;
+            display: none;
+        }
+
+        input:checked ~ .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+            margin-left: 20px;
+        }
+    }
+}
+
+.transparent {
+    background: transparent;
+}
+
+.color {
+    background-color: $main;
+}

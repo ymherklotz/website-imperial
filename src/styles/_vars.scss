@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$main: #1a222c;
+$sec: #4B5664;
+$purple: #54516A;
+$cut: 550px;
+
+$base-font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$main-color: #406e99 !default;
+$lighter-main-color: lighten($main-color, 20%) !default;
+$darker-main-color: #1a232c !default;
+
+$secondary-color: #554099 !default;
+$lighter-secondary-color: lighten($secondary-color, 20%) !default;
+
+$ternary-color: #4dba82 !default;
+$lighter-ternary-color: lighten($ternary-color, 20%) !default;
+
+$text-color:       #424242 !default;
+$background-color: #fdfdfd !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+$spacing-unit:     30px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
