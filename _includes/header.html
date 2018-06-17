@@ -1,12 +1,12 @@
 <header class="site-header">
   <div id="ymh_logo">
-    <a href="{{ "/" | relative }}">
-      <img class="top" src="/assets/img/logos/ymh_green.png" />
-      <img class="bottom" src="/assets/img/logos/ymh_white.png" />
+    <a href="{{ "" | prepend: site.baseurl }}" >
+      <img class="top" src="{{ "assets/img/logos/ymh_green.png" | prepend: site.baseurl }}" />
+      <img class="bottom" src="{{ "assets/img/logos/ymh_white.png" | prepend: site.baseurl }}" />
     </a>
   </div>
-  <nav class="site-nav transparent" id="nav-bar">
-    <a href="#about" class="link" data-scroll>About Me</a>
-    <a href="#projects" class="link" data-scroll>Projects</a>
+  <nav class="site-nav color" id="nav-bar">
+    <a href="{{ "#about" | prepend: site.baseurl }}" class="link">About Me</a>
+    <a href="{{ "#projects" | prepend: site.baseurl }}" class="link">Projects</a>
   </nav>
 </header>
