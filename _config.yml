@@ -3,19 +3,21 @@ title: Yann Herklotz
 description: Personal website for blogs and projects.
 baseurl: "/"
 url: "www.yannherklotz.com"
+# url: "localhost:3000"
 
 # User settings
 username: Yann Herklotz
-user_description: >
-  Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a
-  bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters
-  pour-over snackwave you probably haven't heard of them small batch. Cornhole
-  mustache man bun letterpress echo park VHS.
 user_title: Software Developer
 email: ymherklotz@gmail.com
-twitter_username: ymherklotz
+twitter_username: \@ymherklotz
 github_username: ymherklotz
 linkedin_username: yannherklotz
+
+markdown: kramdown
+
+collections:
+  portfolio:
+    output: true
 
 # Google-analytics
 google-analytics:
@@ -25,3 +27,10 @@ exclude:
   - package.json
   - src
   - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - scripts/
