@@ -21,7 +21,7 @@ implemented in the Mips I processor.
 What is a processor?
 ====================
 
-![Mips processor]({{assets/img/mips_processor/mips_processor_layout.png | prepend: site.baseurl}})
+![Mips processor](/assets/img/mips_processor/mips_processor_layout.png)
 
 A processor is a digital circuit that receives instructions and exectues them
 sequentially. These instructions can be anything from branching instructions,
