@@ -1,8 +1,9 @@
 # Site settings
 title: Yann Herklotz
-description: Personal website for blogs and projects.
-baseurl: "/"
-url: "www.yannherklotz.com"
+description: >-
+  Game engine C++ developer, with a love for functional programming
+baseurl: /
+url: www.yannherklotz.com
 # url: "localhost:3000"
 
 # User settings
