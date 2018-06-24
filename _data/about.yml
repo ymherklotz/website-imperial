@@ -2,3 +2,22 @@ user_about: >-
   Hi, my name is Yann and I am interested in game engine design and development
   using C++, but also love exploring functional programming languages such as
   Haskell and F# for other projects that suite these languages better.
+
+timeline:
+  -
+    company: Arm
+    dates: Apr 2018 - present
+    description: >-
+      Intern at Arm working in the Hardware and the Software Department.
+  -
+    company: Turinglab
+    dates: Oct 2016 - Jan 2018
+    description: >-
+      Teacher at Turinglab, which teaches coding in a visual way using
+      Javascript and the p5.js library. This makes coding much more interesting
+      for young children that want to learn.
+  -
+    company: Teaching Assistant
+    dates: Oct 2017 - Dec 2017
+    description: >-
+      Software Engineering Teaching Assistant at Imperial College London.
