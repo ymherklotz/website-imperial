@@ -1,14 +1,19 @@
 <header class="site-header">
   <div class="site-header-spacing">
     <div id="ymh_logo">
-      <a href="/" >
-        <img class="top" src="/assets/img/logos/ymh_green.png" />
-        <img class="bottom" src="/assets/img/logos/ymh_white.png" />
+      <a href="{{ site.baseurl }}" >
+        <img class="top" src="{{ "assets/img/logos/ymh_green.png" | prepend: site.baseurl }}" />
+        <img class="bottom" src="{{ "assets/img/logos/ymh_white.png" | prepend: site.baseurl }}" />
       </a>
     </div>
     <nav class="site-nav color" id="nav-bar">
-      <a href="/#about" class="link">About Me</a>
-      <a href="/#projects" class="link">Projects</a>
+      <a href="{{ "#about" | prepend: site.baseurl }}" class="link">About Me</a>
+      <div class="dropdown">
+        <a href="{{ "#projects" | prepend: site.baseurl }}" class="link">Projects</a>
+        <div class="dropdown-content">
+          <a href="{{ "portfolio" | prepend: site.baseurl }}">All Projects</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
