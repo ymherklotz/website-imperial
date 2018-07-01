@@ -98,6 +98,9 @@
     transition: color 0.3s ease-out,
                 background-color 0.3s ease-out,
                 border-color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out,
+                background-color 0.3s ease-out,
+                border-color 0.3s ease-out;
     
     &:visited {
         color: $main;
@@ -111,12 +114,18 @@
         transition: color 0.3s ease-in,
                     background-color 0.3s ease-in,
                     border-color 0.3s ease-in;
+        -webkit-transition: color 0.3s ease-in,
+                    background-color 0.3s ease-in,
+                    border-color 0.3s ease-in;
     }
     &:active {
         background-color: $purple;
         border-color: $purple;
         color: #fff;
         transition: color 0.3s ease-in,
+                    background-color 0.3s ease-in,
+                    border-color 0.3s ease-in;
+        -webkit-transition: color 0.3s ease-in,
                     background-color 0.3s ease-in,
                     border-color 0.3s ease-in;
     }
