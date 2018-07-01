@@ -84,7 +84,7 @@ gulp.task('watch', function() {
     gulp.watch('src/fonts/**/*.{tff,woff,woff2}', ['fonts']);
     gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
     gulp.watch(['*html', '_includes/*html', '_layouts/*.html'], ['jekyll-rebuild']);
-    gulp.watch(['_portfolio/*.md', '_data/*.yml', '_data/*.csv', '_posts/*.md'], ['jekyll-rebuild'])
+    gulp.watch(['_config.yml', '*.md', '_portfolio/*.md', '_data/*.yml', '_data/*.csv', '_posts/*.md'], ['jekyll-rebuild'])
 });
 
 gulp.task('default', ['js', 'sass', 'fonts', 'imagemin', 'browser-sync', 'watch']);
