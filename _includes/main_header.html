@@ -1,12 +1,19 @@
-<header class="main-site-header">
-  <div id="ymh_logo">
-    <a href="/">
-      <img class="top" src="/assets/img/logos/ymh_green.png" />
-      <img class="bottom" src="/assets/img/logos/ymh_white.png" />
-    </a>
+<header class="main-site-header" id="main-header">
+  <div class="site-header-spacing">
+    <div id="ymh_logo">
+      <a href="/">
+        <img class="top" src="/assets/img/logos/ymh_green.png" />
+        <img class="bottom" src="/assets/img/logos/ymh_white.png" />
+      </a>
+    </div>
+    <nav class="site-nav transparent" id="nav-bar">
+      <a href="#about" class="link" data-scroll>About Me</a>
+      <div class="dropdown">
+        <a href="#projects" class="link dropdown" data-scroll>Projects</a>
+        <div class="dropdown-content">
+          <a href="{{ "portfolio" | prepend: site.baseurl }}">All Projects</a>
+        </div>
+      </div>
   </div>
-  <nav class="site-nav transparent" id="nav-bar">
-    <a href="#about" class="link" data-scroll>About Me</a>
-    <a href="#projects" class="link" data-scroll>Projects</a>
   </nav>
 </header>
