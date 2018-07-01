@@ -1,14 +1,15 @@
 user_about: >-
-  Hi, my name is Yann and I am interested in game engine design and development
-  using C++, but also love exploring functional programming languages such as
-  Haskell and F# for other projects that suite these languages better.
+  Hi, my name is Yann and I enjoy low level programming using C and C++. I am
+  currently in my final year studying Electronic and Information Engineering at
+  Imperial College London.
 
 timeline:
   -
     company: Arm
     dates: Apr 2018 - present
     description: >-
-      Intern at Arm working in the Hardware and the Software Department.
+      Hardware Verification Engineering Intern at Arm for three months, then
+      moved to the Software Engineering department working on GPU models.
   -
     company: Turinglab
     dates: Oct 2016 - Jan 2018
@@ -20,4 +21,6 @@ timeline:
     company: Teaching Assistant
     dates: Oct 2017 - Dec 2017
     description: >-
-      Software Engineering Teaching Assistant at Imperial College London.
+      Software Engineering Teaching Assistant at Imperial College London, where
+      I helped teach first and second year students the basics of C++, and then
+      the concept behind Object Oriented programming.
