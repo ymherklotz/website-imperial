@@ -1,7 +1,21 @@
-user_about: >-
+user: >-
   Hi, my name is Yann and I enjoy low level programming using C and C++. I am
   currently in my final year studying Electronic and Information Engineering at
   Imperial College London.
+
+experience:
+  -
+    icon: todo
+    title: Software
+    description: >-
+      Most of my programming experience is in C++, where I am familiar with the
+      newest standard (C++17), as well as older standards and their
+      differences. I also enjoy functional programming, and have written a large
+      project using F# called FMark, which was written using purely functional
+      code.
+
+  -
+    icon: 
 
 timeline:
   -
