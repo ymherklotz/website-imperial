@@ -1,19 +1,20 @@
-<header class="site-header">
-  <div class="site-header-spacing">
-    <div id="ymh_logo">
-      <a href="{{ site.baseurl }}" >
-        <img class="top" src="{{ "assets/img/logos/ymh_green.png" | prepend: site.baseurl }}" />
-        <img class="bottom" src="{{ "assets/img/logos/ymh_white.png" | prepend: site.baseurl }}" />
-      </a>
-    </div>
-    <nav class="site-nav color" id="nav-bar">
-      <a href="{{ "#about" | prepend: site.baseurl }}" class="link">About Me</a>
-      <div class="dropdown">
-        <a href="{{ "#projects" | prepend: site.baseurl }}" class="link">Projects</a>
-        <div class="dropdown-content">
-          <a href="{{ "portfolio" | prepend: site.baseurl }}">All Projects</a>
-        </div>
-      </div>
-    </nav>
+<div class="site-header-spacing">
+  <div id="ymh_logo">
+    <a href="{{ site.baseurl }}" >
+      <img class="top" src="{{ "assets/img/logos/ymh_green.png" | prepend: site.baseurl }}" />
+      <img class="bottom" src="{{ "assets/img/logos/ymh_white.png" | prepend: site.baseurl }}" />
+    </a>
   </div>
-</header>
+  <a href="#" class="header__icon" id="header__icon"></a>
+  <nav class="menu" id="menu">
+    <a href="{{ site.baseurl }}">Home</a>
+    <a href="{{ "#about" | prepend: site.baseurl }}" id="about-h">About Me</a>
+    <div class="dropdown">
+      <a href="{{ "#projects" | prepend: site.baseurl }}" id="project-h">Projects</a>
+      <div class="dropdown-content">
+        <a href="{{ "portfolio" | prepend: site.baseurl }}" id="a-project-h">All Projects</a>
+      </div>
+    </div>
+    <a href="{{ "blog" | prepend: site.baseurl }}" id="blog-h">Blog</a>
+  </nav>
+</div>

@@ -4,16 +4,23 @@
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-
-    {% include footer.html %}
-
+    <div class="site-container">
+      <div class="site-pusher">
+        <header class="site-header">
+          {% include header.html %}
+        </header>
+        <div class="site-content">
+          <div class="container">
+            <div class="page-content" aria-label="Content">
+              <div class="wrapper">
+                {{ content }}
+              </div>
+            </div>
+            {% include footer.html %}
+          </div>
+        </div>
+        <div class="site-cache" id="site-cache"></div>
+      </div> <!-- site-pusher -->
+    </div> <!-- site-container -->
   </body>
 </html>
