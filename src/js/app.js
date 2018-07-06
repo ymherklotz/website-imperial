@@ -1,7 +1,5 @@
 /* sweetScroll load */
-document.addEventListener("DOMContentLoaded", function() {
-    const sweetScroll = new SweetScroll({/* some options */});
-
+$(document).ready(function() {
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
     particlesJS('particles-js', {
         "particles" : {
@@ -78,9 +76,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     $(window).scroll(function() {
-        // if you hard code, then use console
-        //.log to determine when you want the
-        // nav bar to stick.
         console.log($(window).scrollTop())
         if ($(window).scrollTop() > 10) {
             $('#main-header').addClass('site-header');
@@ -91,4 +86,21 @@ document.addEventListener("DOMContentLoaded", function() {
             $('#main-header').addClass('main-site-header');
         }
     });
-}, false);
+
+    $("#about-h").click(function(e) { $("#about").ScrollTo(); });
+    $("#project-h").click(function(e) { $("#projects").ScrollTo(); });
+    $("#main-h").click(function (e) { $("#").ScrollTo(); });
+
+    (function($) {
+
+		$('#header__icon').click(function(e){
+			e.preventDefault();
+			$('body').toggleClass('with--sidebar');
+		});
+        
+        $('#site-cache').click(function(e){
+            $('body').removeClass('with--sidebar');
+        });
+        
+	})(jQuery);
+});
