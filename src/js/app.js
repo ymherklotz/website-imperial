@@ -1,4 +1,3 @@
-/* sweetScroll load */
 $(document).ready(function() {
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
     particlesJS('particles-js', {
@@ -75,8 +74,16 @@ $(document).ready(function() {
         "retina_detect" : true
     });
 
+    if ($(window).scrollTop() > 10) {
+        $('#main-header').addClass('site-header');
+        $('#main-header').removeClass('main-site-header');
+    }
+    if ($(window).scrollTop() < 11) {
+        $('#main-header').removeClass('site-header');
+        $('#main-header').addClass('main-site-header');
+    }
+
     $(window).scroll(function() {
-        console.log($(window).scrollTop())
         if ($(window).scrollTop() > 10) {
             $('#main-header').addClass('site-header');
             $('#main-header').removeClass('main-site-header');
@@ -87,9 +94,51 @@ $(document).ready(function() {
         }
     });
 
-    $("#about-h").click(function(e) { $("#about").ScrollTo(); });
-    $("#project-h").click(function(e) { $("#projects").ScrollTo(); });
-    $("#main-h").click(function (e) { $("#").ScrollTo(); });
+    $("#menu a[href^='/#']").on('click', function(e) {
+        // prevent default anchor click behavior
+        e.preventDefault();
+
+        // store hash
+        var hash = this.hash;
+
+        console.log("hash: '"+hash+"'")
+
+        // animate
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 500, function(){
+
+            // when done, add hash to url
+            // (default click behaviour)
+            if (hash != "#particles-js") {
+                window.location.hash = hash;
+            } else {
+                window.location.hash = "";
+            }
+        });
+    });
+
+    $("#ymh_logo a[href^='/#']").on('click', function(e) {
+        // prevent default anchor click behavior
+        e.preventDefault();
+
+        // store hash
+        var hash = this.hash;
+
+        // animate
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 500, function(){
+
+            // when done, add hash to url
+            // (default click behaviour)
+            if (hash != "#particles-js") {
+                window.location.hash = hash;
+            } else {
+                window.location.hash = "";
+            }
+        });
+    });
 
     (function($) {
 
