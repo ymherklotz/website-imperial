@@ -10,14 +10,12 @@
           {% include header.html %}
         </header>
         <div class="site-content">
-          <div class="container">
-            <div class="page-content" aria-label="Content">
-              <div class="wrapper">
-                {{ content }}
-              </div>
+          <div class="page-content" aria-label="Content">
+            <div class="wrapper">
+              {{ content }}
             </div>
-            {% include footer.html %}
           </div>
+          {% include footer.html %}
         </div>
         <div class="site-cache" id="site-cache"></div>
       </div> <!-- site-pusher -->

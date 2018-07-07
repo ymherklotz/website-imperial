@@ -1,20 +1,20 @@
 <div class="site-header-spacing">
   <div id="ymh_logo">
-    <a href="{{ site.baseurl }}" >
+    <a href="{{ "#particles-js" | prepend: site.baseurl }}" id="main-h">
       <img class="top" src="{{ "assets/img/logos/ymh_green.png" | prepend: site.baseurl }}" />
       <img class="bottom" src="{{ "assets/img/logos/ymh_white.png" | prepend: site.baseurl }}" />
     </a>
   </div>
   <a href="#" class="header__icon" id="header__icon"></a>
   <nav class="menu" id="menu">
-    <a href="{{ site.baseurl }}">Home</a>
-    <a href="{{ "#about" | prepend: site.baseurl }}" id="about-h">About Me</a>
+    <a href="{{ "#particles-js" | prepend: site.baseurl }}">Home</a>
+    <a href="{{ "#about" | prepend: site.baseurl }}">About Me</a>
     <div class="dropdown">
-      <a href="{{ "#projects" | prepend: site.baseurl }}" id="project-h">Projects</a>
+      <a href="{{ "#projects" | prepend: site.baseurl }}">Projects</a>
       <div class="dropdown-content">
-        <a href="{{ "portfolio" | prepend: site.baseurl }}" id="a-project-h">All Projects</a>
+        <a href="{{ "portfolio" | prepend: site.baseurl }}">All Projects</a>
       </div>
     </div>
-    <a href="{{ "blog" | prepend: site.baseurl }}" id="blog-h">Blog</a>
+    <a href="{{ "#blog" | prepend: site.baseurl }}">Blog</a>
   </nav>
 </div>

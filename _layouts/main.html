@@ -4,21 +4,22 @@
   <body>
     <div class="site-container">
       <div class="site-pusher">
-        <header class="site-header" id="main-header">
+        <header class="main-site-header" id="main-header">
           {% include header.html %}
         </header>
         <div class="site-content" id="main-site-content">
-          <div class="container">
-            {% include particle.html %}
-            <section id="about">
-              {% include about.html %}
-            </section>
-            <section id="projects">
-              {% include projects.html %}
-            </section>
-            {{ content }}
-            {% include footer.html %}
-          </div>
+          {% include particle.html %}
+          <section id="about">
+            {% include about.html %}
+          </section>
+          <section id="projects">
+            {% include projects.html %}
+          </section>
+          <section>
+            {% include blog.html %}
+          </section>
+          {{ content }}
+          {% include footer.html %}
         </div>
         <div class="site-cache" id="site-cache"></div>
       </div>
