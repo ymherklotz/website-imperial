@@ -101,8 +101,6 @@ $(document).ready(function() {
         // store hash
         var hash = this.hash;
 
-        console.log("hash: '"+hash+"'")
-
         // animate
         $('html, body').animate({
             scrollTop: $(hash).offset().top
