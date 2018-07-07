@@ -64,6 +64,7 @@
   text-align: center;
   .icon {
     text-align: center;
+    box-sizing: content-box;
     color: #FFF;
     width: 20px;
     height: 20px;
@@ -85,14 +86,13 @@
     @media only screen and (min-width:$cut) {
       width: 35px;
       height: 35px;
-      font-size: 35px;
+      font-size: 32px;
     }
   }
 }
 
 .down {
   color: #FFF;
-  position: absolute;
   bottom: 25px;
   width: 100%;
   margin: 0 auto;
@@ -141,7 +141,6 @@
   top: 0px;
   text-align: left;
   background-color: $main;
-  @include card(2);
   transition: margin-top .3s, opacity .3s;
   -webkit-transition: margin-top .3s, opacity .3s;
 
@@ -151,7 +150,6 @@
     min-width: 0px;
     z-index: 0;
     text-align: center;
-    @include card(0);
 
     a {
       @include relative-font-size(0.875);

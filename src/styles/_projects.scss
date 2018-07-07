@@ -5,7 +5,7 @@
     width: 90%;
     max-width: 960px;
     margin: 0 auto;
-    @media only screen and (min-width: $cut) {
+    @media only screen and (min-width: $on-palm) {
         width: 80%;
     }
 }
@@ -45,38 +45,38 @@
 }
 
 .contents {
-    @media only screen and (min-width: $cut) {
+    @media only screen and (min-width: $on-palm) {
         margin-left: 0;
         width: 48%;
     }
 }
 
 .contents-right {
-    @media only screen and (min-width: $cut) {
+    @media only screen and (min-width: $on-palm) {
         float: right;
         margin-top: -5%;
         width: 48%;
     }
 }
 .images-right {
-    @media only screen and (min-width: $cut) {
+    @media only screen and (min-width: $on-palm) {
         float: right;
         width: 48%;
     }
     img {
-        @media only screen and (min-width: $cut) {
+        @media only screen and (min-width: $on-palm) {
             float: right;
         }
     }
 }
 
 .images-left {
-    @media only screen and (min-width: $cut) {
+    @media only screen and (min-width: $on-palm) {
         float: left;
         width: 48%;
     }
     img {
-        @media only screen and (min-width: $cut) {
+        @media only screen and (min-width: $on-palm) {
             float: left;
         }
     }
@@ -133,5 +133,6 @@
 
 .project-center {
     margin: 20px auto;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
+    width: 150px;
 }
