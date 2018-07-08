@@ -2,7 +2,7 @@
 layout: post
 title: "Mips Processor"
 categories: portfolio imperial
-image: assets/img/processor.jpg
+image: /assets/img/processor.jpg
 github: MipsCPU
 permalink: /portfolio/mips_processor/
 ---

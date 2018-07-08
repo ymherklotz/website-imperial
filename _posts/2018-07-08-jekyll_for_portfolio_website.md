@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll to create a Portfolio website
 categories: web imperial
-image: assets/img/jekyll.jpg
+image: /assets/img/jekyll.jpg
 ---
 
 [Jekyll](https://jekyllrb.com/) is a static site generator written in ruby that

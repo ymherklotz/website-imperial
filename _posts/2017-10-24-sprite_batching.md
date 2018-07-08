@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sprite Batching for Faster 2D Graphics
-image: assets/img/sprite_batch.jpg
+image: /assets/img/sprite_batch.jpg
 categories: yage graphics
 ---
 

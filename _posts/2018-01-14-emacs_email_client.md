@@ -2,7 +2,7 @@
 layout: post
 title: Emacs as an Email Client
 categories: emacs
-image: assets/img/emacs_email.jpg
+image: /assets/img/emacs_email.jpg
 ---
 
 Emacs is a very powerful editor, therefore there are many benefits from using it
