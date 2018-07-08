@@ -9,16 +9,20 @@
         </header>
         <div class="site-content" id="main-site-content">
           {% include particle.html %}
-          <section id="about">
+          <a class="anchor" id="about"></a>
+          <section id="about-section">
             {% include about.html %}
           </section>
-          <section id="projects">
+          <a class="anchor" id="projects"></a>
+          <section id="project-section">
             {% include projects.html %}
           </section>
-          <section>
+          <a class="anchor" id="blog"></a>
+          <section id="blog-section">
             {% include blog.html %}
           </section>
-          <section>
+          <a class="anchor" id="contact"></a>
+          <section id="contact-section">
             {% include contact.html %}
           </section>
           {{ content }}
