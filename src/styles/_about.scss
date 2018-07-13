@@ -209,6 +209,12 @@
   border-radius: 5px;
 }
 
+.comp-position {
+  position: relative;
+  background: lighten($background-color, 2);
+  
+}
+
 .desc {
   position: relative;
   margin: 1em 0 0 0;
@@ -218,6 +224,10 @@
   -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
   box-shadow: 0 0 1px rgba(0,0,0,0.20);
   z-index: 15;
+}
+
+.desc h3 {
+  margin: 0 0 10px 0;
 }
 
 .direction-l .desc,
@@ -316,6 +326,19 @@
   .direction-r .desc {
     margin: 1em 1em 0;
   }
+}
+
+.head-icon {
+  font-size: 40px;
+  background-color: $purple;
+  text-align: center;
+  box-sizing: content-box;
+  color: #FFF;
+  width: 40px;
+  height: 40px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 50%;
 }
 
 @media(min-width: 992px){
