@@ -1,7 +1,7 @@
 # Site settings
 title: Yann Herklotz
 description: >-
-  Game engine C++ developer, with a love for functional programming
+  Game engine C++ developer, with a passion for functional programming
 url: https://www.yannherklotz.com/
 baseurl:
 # url: "localhost:3000"

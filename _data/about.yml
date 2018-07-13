@@ -1,40 +1,63 @@
 user: >-
   Hi, my name is Yann and I enjoy low level programming using C and C++. I am
   currently in my final year studying Electronic and Information Engineering at
-  Imperial College London.
+  Imperial College London. The course focuses on computers, from coding theory
+  to the design and architecture of a CPU, to high level programming. I also
+  enjoy the concepts and mathematics behind functional programming, to make
+  software easier to test and write.
 
-experience:
+skills:
   -
-    icon: todo
+    icon: code
     title: Software
     description: >-
-      Most of my programming experience is in C++, where I am familiar with the
-      newest standard (C++17), as well as older standards and their
-      differences. I also enjoy functional programming, and have written a large
-      project using F# called FMark, which was written using purely functional
-      code.
-
+      Most of my programming experience is in C++, mostly working on low level
+      programming such as designing a [Game
+      Engine](https://github.com/ymherklotz/YAGE). I also enjoy functional
+      programming, and have written a project using F# called
+      [FMark](https://github.com/ymherklotz/FMark) with a team of four other
+      students for our Higher Level Programming module. I also have experience
+      in Haskell and test driven development.
   -
-    icon: 
+    icon: quote-right
+    title: Social
+    description: >-
+      Participating in many group projects at university, and working in a team
+      at work, I have learned to work well and coordinate with other
+      people. Working on [FMark](https://github.com/ymherklotz/FMark) I assumed
+      a leadership role and learned how to assign different tasks effectively.
+  -
+    icon: microchip
+    title: Other
+    description: >-
+      I am also very interested in low-power hardware design, especially using
+      FPGAs. I have industry experience in System Verilog, designing test
+      benches, and have used Verilog in first and second year at university.
 
 timeline:
   -
     company: Arm
+    position: Intern
     dates: Apr 2018 - present
     description: >-
-      Hardware Verification Engineering Intern at Arm for three months, then
-      moved to the Software Engineering department working on GPU models.
+      Hardware Verification Engineering Intern at Arm for three months, where I
+      worked on developing different workflows used to build test benches that
+      verify the GPU. I then moved to the Software Department working on
+      simulating and visualising what happens in GPU.
   -
     company: Turinglab
+    position: Tutor
     dates: Oct 2016 - Jan 2018
     description: >-
       Teacher at Turinglab, which teaches coding in a visual way using
       Javascript and the p5.js library. This makes coding much more interesting
-      for young children that want to learn.
+      for young children that want to learn, and enjoy making simple games with
+      the library, which can teach them many different aspects of programming.
   -
-    company: Teaching Assistant
+    company: Imperial College London
+    position: Teaching Assistant
     dates: Oct 2017 - Dec 2017
     description: >-
       Software Engineering Teaching Assistant at Imperial College London, where
       I helped teach first and second year students the basics of C++, and then
-      the concept behind Object Oriented programming.
+      the concept behind Object Oriented programming. It 
