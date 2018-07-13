@@ -1,25 +1,37 @@
 <div class="user-details">
   <h2 class="main-header">About me</h2>
   <p>{{ site.data.about.user }}</p>
+  <h3>Skills</h3>
+  <div class="row">
+    {% for skill in site.data.about.skills %}
+    <div class="col-md-4 col-lg-4 col-sm-12">
+      <i class="head-icon fa fa-{{ skill.icon }}" aria-hidden="true"></i>
+      <p>{{ skill.description | markdownify }}</p>
+    </div>
+    {% endfor %}
+  </div>
   <h3>Experience</h3>
   <p>{{ site.data.about.user_experience }}</p>
-
   <ul class="timeline">
     {% for company in site.data.about.timeline %}
     {% assign index = forloop.index | modulo: 2 %}
     <li>
       {% if index == 0 %}
       <div class="direction-r">
-      {% else %}
-      <div class="direction-l">
-      {% endif %}
-        <div class="flag-wrapper">
-          <span class="hexa"></span>
-          <span class="flag">{{ company.company }}</span>
-          <span class="time-wrapper"><span class="time">{{ company.dates }}</span></span>
+        {% else %}
+        <div class="direction-l">
+          {% endif %}
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <div class="flag">{{ company.company }}</div>
+            <span class="time-wrapper"><span class="time">{{ company.dates }}</span></span>
+          </div>
+          <div class="desc">
+            <h3>{{ company.position }}</h3>
+            {{ company.description }}
+          </div>
         </div>
-        <div class="desc">{{ company.description }}</div>
-      </div>
     </li>
     {% endfor %}
-</div>
+  </ul>
+  </div>
