@@ -52,10 +52,10 @@
 }
 
 .hexa:before{
-  content: ""; 
-  position: absolute; 
-  left: 0; 
-  width: 0; 
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
   height: 0;
   border-bottom: 15px solid #f0f0f0;
   border-left: 30px solid transparent;
@@ -64,10 +64,10 @@
 }
 
 .hexa:after{
-  content: ""; 
-  position: absolute; 
-  left: 0; 
-  width: 0; 
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
@@ -212,7 +212,7 @@
 .comp-position {
   position: relative;
   background: lighten($background-color, 2);
-  
+
 }
 
 .desc {
@@ -252,7 +252,7 @@
     clear: both;
     visibility: hidden;
   }
-  
+
   .timeline .hexa {
     left: -28px;
     right: auto;
@@ -281,7 +281,7 @@
   .flag-wrapper {
     display: inline-block;
   }
-  
+
   .flag {
     font-size: 18px;
   }
