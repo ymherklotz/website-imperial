@@ -44,7 +44,7 @@ $(document).ready(function() {
                 "direction" : "none",
                 "random" : true,
                 "straight" : false,
-                "out_mode" : "out",
+                "out_mode" : "bounce",
                 "bounce" : false,
                 "attract" : {"enable" : false, "rotateX" : 600, "rotateY" : 1200}
             },
@@ -53,16 +53,16 @@ $(document).ready(function() {
         "interactivity" : {
             "detect_on" : "window",
             "events" : {
-                "onhover" : {"enable" : false, "mode" : "grab"},
+                "onhover" : {"enable" : true, "mode" : "bubble"},
                 "onclick" : {"enable" : true, "mode" : "push"},
                 "resize" : true
             },
             "modes" : {
                 "grab" : {"distance" : 250, "line_linked" : {"opacity" : 1}},
                 "bubble" : {
-                    "distance" : 400,
-                    "size" : 40,
-                    "duration" : 2,
+                    "distance" : 300,
+                    "size" : 10,
+                    "duration" : 4,
                     "opacity" : 8,
                     "speed" : 3
                 },
